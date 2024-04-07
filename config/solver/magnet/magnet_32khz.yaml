@@ -6,7 +6,8 @@
 defaults:
   - musicgen/default
   - /model: lm/musicgen_lm
-  - override /dset: audio/default
+  #- override /dset: audio/default
+  - override /dset: audio/example
   - _self_
 
 lm_model: transformer_lm_magnet

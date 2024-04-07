@@ -52,6 +52,10 @@ class MusicInfo(AudioInfo):
     self_wav: tp.Optional[WavCondition] = None
     # dict mapping attributes names to tuple of wav, text and metadata
     joint_embed: tp.Dict[str, JointEmbedCondition] = field(default_factory=dict)
+    
+    # Added for accompanied.
+    lyrics: tp.Optional[str] = None
+    pitch: tp.Optional[str] = None
 
     @property
     def has_music_meta(self) -> bool:
